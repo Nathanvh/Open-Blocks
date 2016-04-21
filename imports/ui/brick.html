@@ -1,0 +1,51 @@
+<template name="brick">
+	<div class="col col-lg-6">
+		<div class="brick">
+			<div class="name">
+				<p>Device - {{ device }}</p>
+			</div>
+			<div class="row">
+				<div class="col col-xs-5 col-xs-offset-1 location">
+					<img src="/assets/images/location.png">
+					<p><span>{{ street }}</span></p>
+					<p style="position: relative; top: -3em; left: 90px;">{{ location }}</p>
+				</div>
+				<div class="col col-xs-5 col-xs-offset-1">
+					<img src="/assets/images/littlebit.png">
+					<p>{{ latestSignal.littleBit }}</p>
+				</div>
+			</div>
+			<div class="row" style="margin-bottom: 6em;">
+				<div class="col col-xs-5 col-xs-offset-1">
+					<img src="/assets/images/wifi.png" style="height: 57px;">
+					<p><span>{{ latestSignal.createdAt }}</span></p>
+				</div>
+				<div class="col col-xs-5 col-xs-offset-1">
+					<p>{{ text }}</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-xs-3 col-xs-offset-1">
+					<img src="/assets/images/light.png">
+					<p>{{ latestSignal.light }}</p>
+				</div>
+				<div class="col col-xs-3 col-xs-offset-1">
+					<img src="/assets/images/temp.png">
+					<p>{{ latestSignal.temp }}</p>
+				</div>
+				<div class="col col-xs-3 col-xs-offset-1">
+					<img src="/assets/images/sound.png">
+					<p>{{ latestSignal.sound }}</p>
+				</div>
+			</div>
+			<!-- <div class="lat"><p>Latitude - {{ lat }}</p></div>
+			<div class="long"><p>Longitude - {{ long }}</p></div>
+			<div class="location"><p>Location - {{ location }}</p></div>
+			<div class="street"><p>Street - {{ street }}</p></div>
+			<div class="time"><p>Latest signal - {{ latestSignal.temp }}</p></div>
+			<div class="light"><p>Latest signal - {{ latestSignal.light }}</p></div>
+			<div class="sound"><p>Latest signal - {{ latestSignal.sound }}</p></div>
+			<div class="littlebit"><p>Latest signal - {{ latestSignal.temp }}</p></div> -->
+		</div>
+	</div>
+</template>

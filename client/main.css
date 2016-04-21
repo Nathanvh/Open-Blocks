@@ -1,0 +1,86 @@
+/* CSS declarations go here */
+
+h1 {
+	font-family: 'Exo', Arial, serif;
+	font-size: 5em;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Exo', Arial, serif;
+	font-size: 3em;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+p {
+	font-family: 'Roboto', Arial, serif;
+	font-weight: 400;
+}
+
+header {
+	height: 100vh;
+	padding: 25% 0;
+	text-align: center;
+}
+
+.blocks {
+	background: url('/assets/images/background.jpg') no-repeat center center fixed;
+	padding: 3em 0;
+
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.brick {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin: 3em 8.333333333333333%;
+	padding-bottom: 1.5em;
+	height: 500px;
+}
+
+.brick .name {
+	background-color: red;
+	margin-bottom: 1.5em;
+}
+
+.brick .name:after {
+	clear: both;
+	content: '';
+	display: block;
+}
+
+.brick .name p {
+	line-height: 1em;
+	margin: 1.5em;
+	text-align: center;
+}
+
+.brick .location p {
+	line-height: 1em;
+}
+
+.brick .location span {
+	font-weight: bold;
+	top: 1em;
+	position: relative;
+}
+
+.brick img {
+	height: 75px;
+	float: left;
+	margin-right: 1em;
+}
+
+.brick p {
+	float: left;
+	line-height: 75px;
+}
+
+.brick .location img {
+	height: 100px;
+}

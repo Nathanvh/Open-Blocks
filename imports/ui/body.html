@@ -1,0 +1,38 @@
+<body>
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1>Our city block</h1>
+					<h2>The smartcity DIY toolkit</h2>
+					<p>Find out about the things your toolkit measures, below.</p>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="blocks">
+		<div class="container">
+			<div class="row">
+				{{#each bricks}}
+					{{> brick}}
+				{{/each}}
+			</div>
+		</div>
+	</section>
+
+	<!-- <table style="width: 50%">
+		<tr>
+			<th>Device</th>
+			<th>Ontvangen op</th>
+			<th>Temperatuur</th>
+			<th>Licht</th>
+			<th>Geluid</th>
+			<th>LittleBit</th>
+		</tr>
+	</table>
+	<table style="width: 50%" id="table">
+		{{#each signals}}
+			{{> signal}}
+		{{/each}}
+	</table> -->
+</body>
